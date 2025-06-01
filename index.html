@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grow a Garden</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>🌱 Grow a Garden</h1>
+    <div class="auth-buttons">
+      <button id="loginBtn">Login</button>
+      <button id="signupBtn">Sign Up</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="cards-container">
+      <div class="card" id="profilesCard">
+        <h2>🌿 Player Profiles</h2>
+        <p>Show off your garden stats, rare plants, and progress.</p>
+      </div>
+      <div class="card" id="leaderboardCard">
+        <h2>🏆 Monthly Leaderboard</h2>
+        <p>Top 3 players win rewards and Discord roles.</p>
+      </div>
+      <div class="card" id="galleryCard">
+        <h2>📸 Gallery Wall</h2>
+        <p>Upload garden screenshots, react, and get featured.</p>
+      </div>
+      <div class="card" id="discordCard">
+        <h2>💬 Discord Server</h2>
+        <p>Join our Discord to chat and grow together.</p>
+      </div>
+      <div class="card" id="plantCard">
+        <h2>🌼 Plant of the Week</h2>
+        <p>Highlight rare plants with tips and votes.</p>
+      </div>
+      <div class="card" id="eventsCard">
+        <h2>📢 Events</h2>
+        <p>Contests, updates, winners posted here.</p>
+      </div>
+      <div class="card" id="tradeCard">
+        <h2>💱 Trade Board</h2>
+        <p>Post trades, comment, and like others.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Modals -->
+  <div id="modalOverlay" class="hidden">
+    <div class="modal" id="loginModal">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <input type="text" id="loginUser" placeholder="Username" required />
+        <input type="password" id="loginPass" placeholder="Password" required />
+        <button type="submit">Login</button>
+        <p class="switch-msg">Don't have an account? <span id="showSignup">Sign Up</span></p>
+      </form>
+      <button class="closeBtn" id="closeLogin">&times;</button>
+    </div>
+
+    <div class="modal" id="signupModal">
+      <h2>Sign Up</h2>
+      <form id="signupForm">
+        <input type="text" id="signupUser" placeholder="Choose Username" required />
+        <input type="password" id="signupPass" placeholder="Choose Password" required />
+        <button type="submit">Register</button>
+        <p class="switch-msg">Already have an account? <span id="showLogin">Login</span></p>
+      </form>
+      <button class="closeBtn" id="closeSignup">&times;</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
